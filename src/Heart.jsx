@@ -6,10 +6,11 @@ License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 Source: https://sketchfab.com/3d-models/pumping-heart-model-6f815b9822dc479eae0a17b8dcab9c75
 Title: PUMPING HEART MODEL
 */
-
-import React, { useEffect, useRef } from 'react'
+import * as THREE from 'three'
+import React, { useCallback, useEffect, useMemo, useRef } from 'react'
 import { useGLTF, useAnimations, SpotLight, Text, Sparkles } from '@react-three/drei'
-
+import { useFrame, useLoader } from '@react-three/fiber';
+import circleImg from './assets/circle.png'
 export function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/heart.glb')
@@ -26,6 +27,7 @@ export function Model(props) {
   return (
     <group scale={window.innerWidth<=768?0.03:0.05} position={[0,window.innerWidth<=768?0:-2,0]} ref={group} {...props} dispose={null}>
       <directionalLight scale={[10,100,100]} position={[-1, window.innerWidth<=768?30.876:38.876, 0.255]} intensity={4000} />
+      <directionalLight scale={[10,100,100]} position={[5, window.innerWidth<=768?50.876:50.876, 0.255]} intensity={4000} />
 
       
       <group name="Sketchfab_Scene">

@@ -11,7 +11,7 @@ function Nav() {
       <nav className="bg-gray-800">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center w-[100%] justify-between h-16">
-          <div className="flex-shrink-0 text-2xl text-white variant">
+          <div className="flex-shrink-0 text-4xl text-white variant">
                 <Link to="/">SPARK.<span className="text-[#F7B02E]">insurance</span></Link>
               </div>
             <div className="flex items-center">
@@ -120,7 +120,7 @@ function Nav() {
     <main className={
         location.pathname=="/"?"":'hidden'
     }>
-        <h2 className="text-7xl font-bold bottom-5 mt-[400px] md:mt-[700px] p-5 text-[#F7B02E]"> Your life is in safe hands</h2>
+        <h2 className="text-7xl font-bold bottom-5 mt-[400px] md:mt-[700px] p-5 text-gray-200"> Your life is in safe hands</h2>
     </main>
       
       

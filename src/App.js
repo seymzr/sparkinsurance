@@ -16,7 +16,7 @@ export default function App() {
         <Route
           path="/"
           element={
-            <Canvas style={{ position: 'fixed', top: 0, left: 0, zIndex: -1,background:"#fff" }}  camera={{ position: [0, -3.2, 40], fov: 12 }}>
+            <Canvas style={{ position: 'fixed', top: 0, left: 0, zIndex: -1,background:"#000" }}  camera={{ position: [0, -3.2, 40], fov: 12 }}>
               <Model />
             </Canvas>
           }
