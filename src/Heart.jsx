@@ -27,7 +27,7 @@ export function Model(props) {
   return (
     <group scale={window.innerWidth<=768?0.03:0.05} position={[0,window.innerWidth<=768?0:-2,0]} ref={group} {...props} dispose={null}>
       <directionalLight scale={[10,100,100]} position={[-1, window.innerWidth<=768?30.876:38.876, 0.255]} intensity={4000} />
-      <directionalLight scale={[10,100,100]} position={[5, window.innerWidth<=768?50.876:50.876, 0.255]} intensity={4000} />
+      <directionalLight  scale={[10,100,100]} position={[5, window.innerWidth<=768?-35.876:50.876, 0.255]} intensity={4000} />
 
       
       <group name="Sketchfab_Scene">
